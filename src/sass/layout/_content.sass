@@ -2,6 +2,9 @@
 	background: image-url("banner.jpg") left center no-repeat
 	position: relative
 	min-height: 560px
+	+breakpoint(768px)
+		min-height: 230px
+		background-size: cover
 	&:before
 		content: ""
 		width: 100%
@@ -32,11 +35,16 @@
 				letter-spacing: 2.8px
 				+breakpoint(768px)
 					font-size: 32px
-					line-height: 24px
+					line-height: 34px
+		+breakpoint(768px)
+			margin-left: 0
+			padding-top: 60px
 
 .task
 	+clearfix
 	padding-top: 87px
+	+breakpoint(768px)
+		padding-top: 30px
 	.task-phone
 		float: left
 		width: 580/1180*100%
@@ -59,6 +67,7 @@
 			float: none 
 			display: block
 			width: 100%
+			padding-left: 0
 		.task-container-img
 			+clearfix
 			margin-top: 19px
@@ -94,8 +103,8 @@
 			+breakpoint(1024px)
 				padding-top: 10px
 		a 
-			background: #1c1e20
-			color: #ffdd22
+			background: #ffdd22
+			color: #1c1e20
 			font-size: 24px
 			line-height: 22px
 			margin-top: 65px
@@ -103,6 +112,10 @@
 			letter-spacing: 1.4px
 			display: inline-block
 			+border-radius(4px)
+			+transition(0.2s)
+			&:hover
+				color: #ffdd22
+				background: #1c1e20
 			+breakpoint(1024px)
 				margin-top: 10px
 .swiper
@@ -111,6 +124,7 @@
 	margin-top: 190px
 	+breakpoint(768px)
 		margin-top: 20px
+		padding-bottom: 0
 	h4 
 		font-size: 36px
 		line-height: 40px
@@ -120,26 +134,50 @@
 		letter-spacing: 2.1px
 		margin-left: 18px
 		padding: 87px 0 39px
+		+breakpoint(1024px)
+			margin-left: 0
+		+breakpoint(768px)
+			padding: 40px 0 15px
+			font-size: 24px
+			line-height: 26px
 	.wrapper
 		padding: 0 80px
+		+breakpoint(768px)
+			padding: 0 20px
 	.swiper-slide
+		padding: 4% 11.6% 85px
+		+box-sizing(border-box)
 	.swiper-slide-active
-		margin-right: -124px
-		margin-left: 26px
-		span 
-			+box-sizing(border-box)
-			padding: 40px 0px
-			display: block
+		text-align: center
 		img 
 			position: relative
 			z-index: 12
-			margin-left: -37px
+			max-width: 100%
+			width: 100%
+			text-align: center
 		+breakpoint(1200px)
 			margin-right: 0
 	.swiper-slide-prev
 		margin-top: 41px
 	.swiper-slide-next
 		margin-top: 41px
+	.swiper-button-prev
+		+breakpoint(1024px)
+			top: 38%
+		+breakpoint(768px)
+			background-size: 55%
+			left: -10px
+			+opacity(1)
+		+breakpoint(469px)
+			top: 30%
+	.swiper-button-next
+		+breakpoint(1024px)
+			top: 38%
+		+breakpoint(768px)
+			right: -10px
+			background-size: 55%
+		+breakpoint(469px)
+			top: 30%
 .ten-page
 	text-align: center
 	img 
@@ -158,6 +196,8 @@
 			font-size: 30px
 			line-height: 30px
 			margin-left: 0
+			letter-spacing: 1px
+			margin-top: 20px
 		&:after
 			content: ""
 			widows: 100%
@@ -178,21 +218,25 @@
 		width: 580/1180*100%
 		float: left
 		position: relative
-		min-height: 850px
+		+clearfix
 		margin-top: 220px
 		background: image-url("iphone.png") 12px 100px no-repeat
 		+breakpoint(768px)
 			float: none
 			display: block
-			margin-top: 30px
+			margin-top: 70px
 			width: 100%
+		+breakpoint(450px)
+			background: transparent
 		img 
-			position: absolute
-			top: 0
-			right: 70px
-			z-index: 2
+			position: relative
+			float: right
+			display: none
+			+opacity(0.5)
+			+transition(0.3s)
 			&.active
-				z-index: 5
+				display: block
+				+opacity(1)
 			+breakpoint(1024px)
 				right: 0
 				max-width: 100%
@@ -210,6 +254,7 @@
 			margin-top: 20px
 			display: block
 			width: 100%
+			padding-left: 0
 		p 
 			font-size: 30px
 			line-height: 32px
@@ -233,8 +278,6 @@
 			+breakpoint(1150px)
 				font-size: 36px
 				line-height: 38px
-				span 
-					margin-left: 0
 			+breakpoint(768px)
 				font-size: 24px
 				line-height: 26px
@@ -243,6 +286,8 @@
 				text-transform: initial
 				font-weight: 400
 				margin-left: 18px
+				+breakpoint(1024px)
+					margin-left: 0
 				
 
 		.devaces-text-mobile-version
@@ -287,11 +332,6 @@
 					margin-top: 20px
 			+breakpoint(768px)
 				margin-top: 0px
-				display: none
-		.tabs-mobile
-			display: none
-			+breakpoint(768px)
-				display: block
 
 
 

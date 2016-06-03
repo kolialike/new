@@ -79,12 +79,13 @@
   height: 100%;
   position: relative;
   opacity: 0.35;
-  transition: 1s;
-  padding-bottom: 40px;
+  transition: 1s(opacity);
+  text-align: center
 }
 .swiper-slide.swiper-slide-active{
   opacity: 1;
-  transition: 1s;
+  transition: 1s(opacity);
+  text-align: center
 
 }
 .swiper-slide.swiper-slide-active:before{
@@ -96,7 +97,9 @@
     top: 0;
     left: 0;
     background: image-url("slider-img.png") 0 0 no-repeat;
+    background-size: 100%;
     z-index: 2;
+    text-align: center
 }
 /* Auto Height */
 .swiper-container-autoheight,
@@ -161,31 +164,31 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
- background: image-url("arrow-l.png");
-  left: 27px;
+ background: image-url("arrow-l.png") center center no-repeat;
+  left: 12px;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
- background: image-url("arrow-l.png");
+ background: image-url("arrow-l.png") center center no-repeat;
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
- background: image-url("arrow-l.png");
+ background: image-url("arrow-l.png") center center no-repeat;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: image-url("arrow-r.png");
+  background-image: image-url("arrow-r.png") ;
   right: 12px;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
 .swiper-container-rtl .swiper-button-prev.swiper-button-black {
-  background-image: image-url("arrow-r.png");
+  background-image: image-url("arrow-r.png") ;
 }
 .swiper-button-next.swiper-button-white,
 .swiper-container-rtl .swiper-button-prev.swiper-button-white {
-  background-image: image-url("arrow-r.png");
+  background-image: image-url("arrow-r.png") ;
 }
 /* Pagination Styles */
 .swiper-pagination {
