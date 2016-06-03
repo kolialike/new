@@ -9,7 +9,7 @@ jQuery(function($){
         slidesPerView: 1,
         centeredSlides: true,
         paginationClickable: true,
-        // spaceBetween: 30,
+        initialSlide: 1,
     });
    
      //tabs
