@@ -79,12 +79,12 @@
   height: 100%;
   position: relative;
   opacity: 0.35;
-  transition: 1s(opacity);
+  transition: 2s(opacity);
   text-align: center
 }
 .swiper-slide.swiper-slide-active{
   opacity: 1;
-  transition: 1s(opacity);
+  transition: 2s(opacity);
   text-align: center
 
 }
