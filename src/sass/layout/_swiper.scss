@@ -152,7 +152,8 @@
   background-repeat: no-repeat;
   z-index: 50
 }
-.swiper-button-prev{
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
   opacity: 0.5;
 
 }
