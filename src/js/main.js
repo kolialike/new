@@ -18,7 +18,7 @@ jQuery(function($){
   tabs.on('click', function(event) {
     event.preventDefault();
     $(this).addClass('active').siblings().removeClass('active');
-    var index = tabs.index($(this));
+    var index = $(this).parent().find('a').index($(this));
     devicesImg.eq(index).addClass('active').siblings().removeClass('active');
 	});
 });
