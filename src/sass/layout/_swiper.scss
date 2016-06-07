@@ -88,7 +88,7 @@
   text-align: center
 
 }
-.swiper-slide.swiper-slide-active:before{
+.swiper-slide.swiper-slide-active>.swiper-slide-img-cont:before{
     display: block;
     position: absolute;
     content: '';
@@ -140,7 +140,7 @@
 .swiper-button-next {
   position: absolute;
   position: absolute;
-  top: 34.7%;
+  top: 57.7%;
   width: 27px;
   height: 58px;
   margin-top: -29px;
