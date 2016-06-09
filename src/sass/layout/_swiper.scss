@@ -88,18 +88,18 @@
   text-align: center
 
 }
-.swiper-slide.swiper-slide-active>.swiper-slide-img-cont:before{
+.swiper-container:before{
     display: block;
     position: absolute;
     content: '';
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 0px;
     left: 0;
-    background: image-url("slider-img.png") 0 0 no-repeat;
+    background: image-url("slider-img.png") center bottom no-repeat;
     background-size: 100%;
     z-index: 2;
-    text-align: center
+    text-align: center;
 }
 /* Auto Height */
 .swiper-container-autoheight,
@@ -140,7 +140,7 @@
 .swiper-button-next {
   position: absolute;
   position: absolute;
-  top: 57.7%;
+  top: 50%;
   width: 27px;
   height: 58px;
   margin-top: -29px;
@@ -165,17 +165,17 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
- background: image-url("arrow-l.png") center center no-repeat;
+ background-image: image-url("arrow-l.png");
   left: 12px;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
- background: image-url("arrow-l.png") center center no-repeat;
+ background-image: image-url("arrow-l.png");
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
- background: image-url("arrow-l.png") center center no-repeat;
+ background-image: image-url("arrow-l.png");
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {

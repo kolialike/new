@@ -152,7 +152,6 @@
 		display: block
 		text-align: center
 		letter-spacing: 2.1px
-		margin-left: 18px
 		padding: 66px 0 106px
 		+breakpoint(1024px)
 			margin-left: 0
@@ -164,6 +163,8 @@
 		padding: 0 80px
 		+breakpoint(767px)
 			padding: 0 20px
+	.swiper-wrapper
+		z-index: 10
 	.swiper-slide-active
 		text-align: center
 		img 
@@ -178,27 +179,24 @@
 	.swiper-slide-prev
 		h4 
 			+opacity(0)
+		.swiper-button-next
+			display: none
+		.swiper-button-prev
+			display: none
 	.swiper-button-prev
-		+breakpoint(1024px)
-			top: 53%
 		+breakpoint(767px)
 			background-size: 55%
 			left: -10px
 			+opacity(1)
-		+breakpoint(469px)
-			top: 53%
 	.swiper-button-next
-		+breakpoint(1024px)
-			top: 53%
 		+breakpoint(767px)
 			right: -10px
 			background-size: 55%
-		+breakpoint(469px)
-			top: 53%
 	.swiper-slide-img-cont
 		position: relative
-		padding: 4% 11.6% 85px
+		padding: 4% 11.6% 10%
 		+box-sizing(border-box)
+
 .ten-page
 	text-align: center
 	img 
